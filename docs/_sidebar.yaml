@@ -269,6 +269,23 @@
       - ITunesParameters
       - NavigationParameters
       - SocialParameters
+  - title: In App Messaging
+    path: in-app-messaging
+    links:
+    - to: "/ios"
+      text: Install on iOS
+      icon: apple
+    - to: "/android"
+      text: Install on Android
+      icon: android
+    - type: divider
+    - to: "/getting-started"
+      text: Getting Started
+      icon: info-circle-o
+    - type: divider
+    - type: reference
+      files:
+      - iid
   - title: Instance ID
     path: iid
     links:
