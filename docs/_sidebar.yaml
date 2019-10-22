@@ -282,10 +282,6 @@
     - to: "/getting-started"
       text: Getting Started
       icon: info-circle-o
-    - type: divider
-    - type: reference
-      files:
-      - iid
   - title: Instance ID
     path: iid
     links:
