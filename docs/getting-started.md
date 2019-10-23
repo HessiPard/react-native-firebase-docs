@@ -52,11 +52,14 @@ We provide several options for you to get started with React Native Firebase, se
 
 > The table below shows the supported versions of React Native and the Firebase SDKs for different versions of `react-native-firebase`
 
-|                           |  3.3.x   |  4.3.x  |       5.x.x       |
-| ------------------------- | :------: | :-----: | :---------------: |
-| React Native              | 0.50-52  | 0.52-55 |   ^0.56 - ^0.58   |
-| Play Services Android SDK | 11.8.0 + | 15.0.1  |      ^16.0.1      |
-| Firebase iOS SDK          | 4.7.0 +  |  5.3.0  | ^5.10.0 - ^5.15.0 |
+|                           |  3.3.x   |       5.2.x        |       5.4.x       |    5.5.x   |
+| ------------------------- | :------: | :----------------: | :---------------: |:----------:|
+| React Native              | 0.50-52  |      0.52-58       |      ^0.59.3      |   ^0.59.3-^0.61.0  |
+| Play Services Android SDK | 11.8.0 + |      ^16.1.0       |      ^16.1.0      |  ^16.1.0 (or ^17.x via [jetifier](https://github.com/mikehardy/jetifier)) |
+| Firebase iOS SDK          | 4.7.0 +  |  ^5.10.x -^5.18.x  | ^5.19.x - ^5.20.x | ^5.19.x - ^6.x |
+
+⚠ The Hermes VM availble with react-native 0.60.3 and higher is **not currectly supported**. Some initial testing has been done and it appears that valid code in this library does not function correctly with Hermes. Use the standard ('JSC') VM.
+⚠ For **iOS 13** you must use Firebase iOS SDK at version `^6.5.x`. Otherwise your app may crash, for more information [take a look on this issue](https://github.com/invertase/react-native-firebase/issues/2409)
 
 ## Questions
 
@@ -72,7 +75,7 @@ For feature requests please visit our [Feature Request Board](https://boards.inv
 
 ## Changelog
 
-Detailed changes for each release are documented in the [releases notes](https://github.com/invertase/react-native-firebase/releases).
+Detailed changes for each release are documented in the [release notes](/docs/v5.x.x/release-notes).
 
 ## Contributing
 
